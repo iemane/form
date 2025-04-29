@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact Us - My Cool Form App</title>
+    <link rel="stylesheet" href="style.css">
+
+</head>
+
+<body>
+
+    <header>
+        <h1>🌸 My Cool Form App</h1>
+    </header>
+
+    <main>
+        <div class="form-container">
+            <h2>Contact Us</h2>
+            <form id="form">
+                <label for="fullName">Full Name</label>
+                <input type="text" id="fullName" name="fullName" required>
+
+                <label for="message">Your Message</label>
+                <textarea id="message" name="message" rows="4" required></textarea>
+
+                <label for="image">Attach an Image (optional)</label>
+                <input type="file" id="image" name="image" accept="image/*">
+
+                <button type="submit">Send Message</button>
+            </form>
+
+            <div id="preview" class="preview hidden">
+                <h3>Message Preview:</h3>
+                <p><strong>Full Name:</strong> <span id="res-fullName"></span></p>
+                <p><strong>Message:</strong> <span id="res-message"></span></p>
+                <div id="res-image"></div>
+            </div>
+        </div>
+    </main>
+
+    <footer>
+        &copy; 2025 My Cool App. All rights reserved.
+    </footer>
+
+    <script src="app.js"></script>
+</body>
+
+</html>
